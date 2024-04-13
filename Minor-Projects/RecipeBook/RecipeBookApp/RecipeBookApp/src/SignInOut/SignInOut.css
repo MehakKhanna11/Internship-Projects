@@ -1,0 +1,118 @@
+.sign-up-page{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 249, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in-page{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 249, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-container{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sign-in-container{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.image-container{
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-text{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 0 20%;
+}
+.image-text h1{
+    font-size: 30px;
+    margin: 5px;
+}
+.image-text p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.image-container  img{
+    height:100%;
+    width: 100%;
+    opacity: 0.95;
+    border-right: 1px solid black;
+    border-radius: 15px 0 0 15px;
+}
+.sign-up,.sign-in{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    padding: 20% 10%;
+    gap:15px;
+}
+#sign-up-text,#sign-in-text{
+    text-align: center;
+}
+#sign-up-button,#sign-in-button{
+    width:70%;
+    margin: 20px auto;
+    font-size: 14px;
+    padding: 10px 7px;
+    border-radius: 10px;
+    background-color: rgb(243, 235, 235);
+    transition: all 0.4s ease-out;
+}
+#sign-up-button:hover,#sign-in-button:hover{
+    background-color: rgb(215, 159, 159);
+    font-weight: 400;
+}
+.link-login,.link-sign-in{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    font-size: 13px;
+}
+.link-login a,.link-sign-in a{
+    text-decoration: none;
+    color:rgb(56, 56, 249)
+}
+
+@media screen and (max-width: 744px) {
+    /* .sign-up-page{
+        background-color: red;
+    } */
+    .image-container{
+        display: none;
+    }
+    .sign-up-container,.sign-in-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+        /* border:2px solid red; */
+    }
+    .sign-up,.sign-in{
+        /* border: 2px solid yellow; */
+        width: 80%;
+        height: 100%;
+    }
+}
